@@ -1,73 +1,98 @@
-# Netflix Dashboard
-Dashboard ini menganalisis performa Netflix dari sisi distribusi rating, distribusi konten berdasarkan negara, pertumbuhan konten per tahun, genre populer, dominasi format film, dan deskripsi tiap konten. Visualisasi dibuat dengan **Tableau** menggunakan data penayangan tahun 2008 - 2020 dengan total 6234 baris data.
+# Youtube and Spotify Dashboard
+Dashboard ini dibuat untuk menganalisis performa musik di dua platform digital terbesar, yaitu Spotify dan YouTube. Analisis ini bertujuan memberikan gambaran menyeluruh mengenai tren konsumsi musik, engagement audiens, serta karakteristik lagu yang berkontribusi pada popularitas artis maupun track tertentu.
+
+Pada dashboard ini, data dikumpulkan dari berbagai atribut penting, seperti views, likes, comments, streams, album type, danceability, energy, hingga status official video. Visualisasi dirancang agar memudahkan pembaca untuk:
+
+1. Membandingkan performa artis dan track teratas di kedua platform.
+
+2. Melihat pola engagement audiens berdasarkan interaksi (likes & comments).
+
+3. Mengidentifikasi perbedaan kontribusi album vs single terhadap performa musik.
+
+4. Mengetahui bagaimana fitur audio (danceability, energy, tempo) memengaruhi popularitas lagu di Spotify.
+
+Dengan dashboard ini, diharapkan pengguna dapat memahami strategi musik digital yang efektif, baik dari sisi konten video YouTube maupun karakteristik audio di Spotify, sehingga dapat menjadi dasar dalam pengambilan keputusan bisnis di industri musik.
 
 ---
-![Dashboard Preview](Netflix_Dashboard.png)
+![Dashboard Preview](spotify_youtube_dashboard.png)
 
 ## 🔗 Live Demo
-[**View Dashboard on Tableau Public**](https://public.tableau.com/views/Netflix_17137145475610/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[**View Dashboard on Tableau Public**](https://public.tableau.com/views/SpotifyandYoutubeAnalyst/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
-### ✅ **INSIGHT DARI DASHBOARD**
+### 📊 **Insight dari Dashboard**
 
-1. **Dominasi Format Film**
+1. **Total Engagement**
 
-   * Jumlah **Movie** mencapai **4.265** judul (sekitar **68,42%**), sedangkan **TV Show** hanya **1.969** judul (**31,58%**).
-   * **Insight**: Koleksi Netflix lebih berat ke arah film dibanding serial.
+   * YouTube memiliki **lebih dari 1,3 miliar views**, sedangkan Spotify mencatat **lebih dari 1,7 miliar streams**.
+   * Rata-rata likes per konten di YouTube cukup tinggi (**600 ribu likes**), tetapi **engagement rate hanya 0,66%**, menunjukkan audiens banyak menonton tapi tidak banyak yang aktif berinteraksi.
 
-2. **Distribusi Rating**
+2. **Top Artists di YouTube**
 
-   * **Rating terbanyak** adalah **TV-MA** dan **TV-14** (konten dewasa dan remaja).
-   * **Rating anak-anak (TV-Y, G, TV-G, dll)** jauh lebih sedikit.
-   * **Insight**: Sebagian besar konten ditujukan untuk remaja dan dewasa muda.
+   * **Ed Sheeran** menempati posisi teratas dengan **15,46M views**, diikuti oleh Katy Perry (13,12M) dan Charlie Puth (12,16M).
+   * Artis global dengan fanbase besar mendominasi, terutama dari genre pop.
 
-3. **Pertumbuhan Konten per Tahun**
+3. **Top Tracks di Spotify**
 
-   * Lonjakan besar konten terjadi pada **2016 hingga 2019**, terutama **Movie**.
-   * Tahun **2020** terlihat penurunan drastis.
-   * **Insight**: Netflix mengalami pertumbuhan pesat selama 2016–2019, tapi sempat terhambat di tahun 2020 (kemungkinan karena pandemi).
+   * Lagu **“Can’t Hold Us”** menjadi track dengan streams tertinggi (**5,226M**), diikuti “The Middle” (4,567M) dan “Shallow” (4,009M).
+   * Ini menunjukkan tren bahwa **lagu kolaborasi internasional** punya performa tinggi di Spotify.
 
-4. **Distribusi Konten Berdasarkan Negara**
+4. **Album Types**
 
-   * Negara dengan jumlah konten terbanyak: **Amerika Serikat**, disusul oleh **India**, **UK**, dan **Kanada**.
-   * Banyak negara di Afrika dan Asia Tengah masih minim konten.
-   * **Insight**: Fokus produksi dan lisensi Netflix masih terpusat di negara-negara maju.
+   * **Album** mendominasi katalog Spotify (**77,47%**) dibanding **single** (18,02%) dan **compilation** (4,51%).
+   * Namun, meski album mendominasi jumlah, single masih menyumbang kontribusi signifikan dalam **engagement**.
 
-5. **Genre Populer**
+5. **Album Type Engagement**
 
-   * **Top 3 genre**: *Documentaries*, *Stand-Up Comedy*, dan *Dramas + International Movies*.
-   * Genre seperti *Children & Family* dan *Kids’ TV* juga ada, tapi tidak dominan.
-   * **Insight**: Penonton menyukai konten informatif (documentary) dan hiburan ringan (stand-up, drama internasional).
+   * **Album** rata-rata mendapatkan **598K likes** dan **98,481K views**.
+   * **Single** lebih unggul dalam **likes (637K)**, meskipun views lebih kecil.
+   * Artinya, **single cenderung lebih engaging** meski distribusinya lebih sedikit.
+
+6. **YouTube Engagement (Likes vs Comments)**
+
+   * Banyak video resmi (**official video = True**) memiliki engagement lebih tinggi dibanding non-official.
+   * Video musik dengan likes tinggi tidak selalu memiliki jumlah komentar tinggi → engagement lebih banyak berbasis **like pasif** daripada interaksi.
+
+7. **Spotify Audio Features (Danceability vs Energy)**
+
+   * Lagu dengan **danceability tinggi** (mudah untuk dance) cenderung juga memiliki **energy tinggi**, dan banyak dari jenis **single**.
+   * Tren ini mendukung bahwa **lagu upbeat lebih populer untuk streaming**, terutama di Spotify.
 
 ---
 
-### 💡 **REKOMENDASI BISNIS UNTUK NETFLIX**
+### 💡 **Rekomendasi Bisnis**
 
-1. **Diversifikasi Konten Anak dan Keluarga**
+1. **Optimalkan Engagement Rate YouTube**
 
-   * Konten dengan rating TV-Y dan G sangat sedikit → perlu ditambah untuk memperluas pangsa pasar keluarga dan anak-anak.
-   * Produksi lebih banyak konten ramah keluarga dapat menarik pelanggan dari segmen yang belum tergarap optimal.
+   * Dorong artis untuk menambahkan **CTA (Call to Action)** seperti ajakan komen, challenge, atau live session.
+   * Buat konten interaktif (misalnya behind the scenes, Q\&A) agar audiens lebih aktif.
 
-2. **Penambahan Konten Lokal di Negara Berkembang**
+2. **Fokus pada Single untuk Boost Engagement**
 
-   * Banyak negara di Afrika, Timur Tengah, dan Asia Tenggara masih minim konten.
-   * Netflix bisa investasi dalam produksi lokal atau lisensi konten lokal untuk meningkatkan penetrasi pasar.
+   * Meski album mendominasi, **single terbukti lebih engaging**.
+   * Label bisa fokus merilis lebih banyak **single strategis** sebelum full album, untuk meningkatkan hype.
 
-3. **Eksplorasi Genre yang Sedang Naik Daun**
+3. **Kolaborasi Strategis**
 
-   * Genre seperti *Korean Drama*, *True Crime*, dan *Reality Show* (tidak terlihat dominan di dashboard) bisa menjadi peluang pertumbuhan berdasarkan tren global.
+   * Lagu kolaborasi terbukti sukses di Spotify (“Can’t Hold Us”, “The Middle”).
+   * Rekomendasi: perbanyak **kolaborasi lintas genre dan lintas negara** untuk memperluas pasar.
 
-4. **Rebalance antara Movie dan TV Show**
+4. **Promosi Berdasarkan Audio Features**
 
-   * Dominasi film menunjukkan peluang untuk menambah serial original atau mini series yang dapat meningkatkan engagement dan durasi tonton pengguna.
+   * Lagu dengan **energy tinggi dan danceability besar** lebih disukai di Spotify.
+   * Bisa digunakan untuk campaign **playlist khusus workout, party, atau dance** yang potensial menarik audiens muda.
 
-5. **Optimalisasi Produksi Pasca 2020**
+5. **Diversifikasi Konten YouTube**
 
-   * Penurunan tajam konten setelah 2019 bisa disebabkan oleh pandemi, namun perlu strategi pemulihan dan inovasi untuk kembali ke tren pertumbuhan.
+   * Tidak hanya official video, tetapi juga **konten tambahan** seperti lyric video, live performance, dan short-form (YouTube Shorts).
+   * Ini dapat menaikkan engagement lebih tinggi.
 
-6. **Strategi Rating dan Penyaringan**
+6. **Optimalkan Album Engagement**
 
-   * Karena konten dewasa (TV-MA) mendominasi, Netflix dapat memperkuat sistem penyaringan dan kontrol orang tua untuk menjaga pengalaman pengguna di semua segmen usia.
+   * Album memiliki distribusi besar tapi engagement lebih rendah dari single.
+   * Solusi: buat promosi album berbasis storytelling (contoh: konsep album, teaser tiap lagu) agar fans lebih engage.
+
+---
 
 ---
