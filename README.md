@@ -1,19 +1,18 @@
-# Youtube and Spotify Dashboard
-Dashboard ini dibuat untuk menganalisis performa musik di dua platform digital terbesar, yaitu Spotify dan YouTube. Analisis ini bertujuan memberikan gambaran menyeluruh mengenai tren konsumsi musik, engagement audiens, serta karakteristik lagu yang berkontribusi pada popularitas artis maupun track tertentu.
+### 🎶📊 Dashboard Spotify & YouTube Analytics
 
-Pada dashboard ini, data dikumpulkan dari berbagai atribut penting, seperti views, likes, comments, streams, album type, danceability, energy, hingga status official video. Visualisasi dirancang agar memudahkan pembaca untuk:
+Dashboard ini dibuat untuk menganalisis performa musik di dua platform digital terbesar, yaitu **Spotify** dan **YouTube**. Analisis ini bertujuan memberikan gambaran menyeluruh mengenai **tren konsumsi musik, engagement audiens, serta karakteristik lagu** yang berkontribusi pada popularitas artis maupun track tertentu.
 
-1. Membandingkan performa artis dan track teratas di kedua platform.
+Pada dashboard ini, data dikumpulkan dari berbagai atribut penting, seperti **views, likes, comments, streams, album type, danceability, energy, hingga status official video**. Visualisasi dirancang agar memudahkan pembaca untuk:
 
-2. Melihat pola engagement audiens berdasarkan interaksi (likes & comments).
+* Membandingkan **performa artis dan track teratas** di kedua platform.
+* Melihat **pola engagement audiens** berdasarkan interaksi (likes & comments).
+* Mengidentifikasi **perbedaan kontribusi album vs single** terhadap performa musik.
+* Mengetahui bagaimana **fitur audio (danceability, energy, tempo)** memengaruhi popularitas lagu di Spotify.
 
-3. Mengidentifikasi perbedaan kontribusi album vs single terhadap performa musik.
-
-4. Mengetahui bagaimana fitur audio (danceability, energy, tempo) memengaruhi popularitas lagu di Spotify.
-
-Dengan dashboard ini, diharapkan pengguna dapat memahami strategi musik digital yang efektif, baik dari sisi konten video YouTube maupun karakteristik audio di Spotify, sehingga dapat menjadi dasar dalam pengambilan keputusan bisnis di industri musik.
+Dengan dashboard ini, diharapkan pengguna dapat memahami **strategi musik digital** yang efektif, baik dari sisi **konten video YouTube** maupun **karakteristik audio di Spotify**, sehingga dapat menjadi dasar dalam **pengambilan keputusan bisnis di industri musik**.
 
 ---
+
 ![Dashboard Preview](spotify_youtube_dashboard.png)
 
 ## 🔗 Live Demo
