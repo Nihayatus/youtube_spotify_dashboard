@@ -43,8 +43,16 @@ LIMIT 10;
 ```
 | Artist | Total_Views |
 | -------------------- | -------------------- |
-| Ethiopia| 13053 |
-
+| Ed Sheeran	| 15460207769 | 
+| Katy Perry	| 13120632075 | 
+| Charlie Puth	| 12167594191 | 
+| Luis Fonsi	| 11627983924 | 
+| Justin Bieber	| 10990787061 | 
+| Daddy Yankee	| 10868279671 | 
+| Bruno Mars	| 10231841530 | 
+| Macklemore & Ryan Lewis	| 10122055560 | 
+| Coldplay	| 9997277884 | 
+| Calvin Harris	| 9758476139 | 
 
 ## Top 10 Track by Stream on Spotify
 ```sql
@@ -57,46 +65,44 @@ LIMIT 10;
 ```
 | Track | Total_Stream |
 | -------------------- | -------------------- |
-| Ethiopia| 13053 |
+| Can't Hold Us (feat. Ray Dalton)	| 5225629104 | 
+| The Middle	| 4566882832 | 
+| Shallow	| 4008677756 | 
+| Feels (feat. Pharrell Williams, Katy Perry & Big Sean)	| 3925148532 | 
+| Blinding Lights	| 3386520288 | 
+| Shape of You	| 3362005201 | 
+| Perfect	| 3239168518 | 
+| El Ultimo AdiÃ³s - Varios Artistas Version	| 3225629221 | 
+| See You Again (feat. Charlie Puth)	| 3042509108 | 
+| Swalla (feat. Nicki Minaj & Ty Dolla $ign)	| 3031746321 | 
 
-## Daily Trend for Total Orders
+## Album Type on Spotify
 ```sql
 SELECT
-  day AS Day,
-  SUM(transaction_qty) AS Total_Orders
-FROM coffee_sales GROUP BY day;
+  Album_type AS Album_Type,
+  COUNT(ID_Number) AS Total_Track
+FROM youtube_spotify GROUP BY Album_type;
 ```
-| Day | Total_Orders |
+| Album_Type | Total_Track |
 | -------------------- | -------------------- |
-| Sunday	| 29627  |
-| Monday	| 30715 |
-| Tuesday	| 29882 |
-| Wednesday	| 30051 |
-| Thursday	| 30659 |
-| Friday	| 30639 |
-| Saturday	| 29083 |
+| album	| 11035 | 
+| compilation	| 642 | 
+| single	| 2567 | 
 
-## Hourly Trend for Total Orders
+## Album Type Engagement
 ```sql
 SELECT
-  hour AS Hour,
-  SUM(transaction_qty) AS Total_Orders
-FROM coffee_sales GROUP BY hour;
+  Album_type AS Album_Type,
+  AVG(Views) AS Avg_Views,
+  AVG(Likes) AS Avg_Likes,
+  AVG(Comments) AS Avg_Comments
+FROM youtube_spotify GROUP BY Album_type;
 ```
-| Hour | Total_Orders |
-| -------------------- | -------------------- |
-| 6	| 6726 |
-| 7	| 19044 |
-| 8	| 24675 |
-| 9	| 24715 |
-| 10	| 26089 |
-| 11	| 13835 |
-| 12	| 12553 |
-| 13	| 12272 |
-| 14	| 12748 |
-| 15	| 12753 |
-| 16	| 12689 |
-| 17	| 12554 |
+| Album_Type | Avg_Views | Avg_Likes | Avg_Comments |
+| ---------------- | ----------------- | --------------- | --------------- |
+| album	| 98481005.95	| 597859.95	| 25645.01 | 
+| compilation	| 81727619.43	| 508615.65	| 17708.28 | 
+| single	| 84192116.55	| 636878.31	| 25300.12 | 
 
 ## Sales by Store Location
 ```sql
